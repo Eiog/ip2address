@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
         // 创建searcher对象
         const searcher = Searcher.newWithFileOnly(dbPath)
         // 查询
-        const data = await searcher.search('1.190.214.2') as result
+        const data = await searcher.search(ip) as result
         const ipData: address = {
             country: data.region.split('|')[0],
             region: data.region.split('|')[1],
