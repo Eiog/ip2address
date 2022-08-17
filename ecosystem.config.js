@@ -1,6 +1,6 @@
 module.exports = {
   apps: {
-    name: "blog-server",
+    name: "ip2address",
     script: "./dist/index.js",
   },
   deploy: {
